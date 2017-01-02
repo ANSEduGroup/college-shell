@@ -9,14 +9,16 @@ si=$(expr $si / 100)
 echo "The Simple Interest is: Rs $si"
 co=$(expr 100 + $r)
 co=$(expr $co / 100)
-i=2
-ci=1
-while [ $i -le $n ]
+i=0
+ci=0
+while [ $i -lt $n ]
 do
-ci=$(expr $ci \* $co)
+si=$(expr $p \* $r)
+si=$(expr $si / 100)
+p=$(expr $p + $si)
+ci=$(expr $ci + $si)
 i=$(expr $i + 1)
 done
-ci=$(expr $ci \* $p)
 echo "The Compound Interest is: Rs $ci"
 
 # root@kali-linux:~$ sh simp.sh
@@ -27,5 +29,4 @@ echo "The Compound Interest is: Rs $ci"
 # Enter the Number of Years
 # 1
 # The Simple Interest is: Rs 500
-# The Compound Interest is: Rs 5000
-# ccetstudent@EMCA:~$ sh simp.sh
+# The Compound Interest is: Rs 610
