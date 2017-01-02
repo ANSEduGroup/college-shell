@@ -28,4 +28,3 @@ echo "The Compound Interest is: Rs $ci"
 # 1
 # The Simple Interest is: Rs 500
 # The Compound Interest is: Rs 5000
-# ccetstudent@EMCA:~$ sh simp.sh
