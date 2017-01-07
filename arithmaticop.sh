@@ -54,4 +54,4 @@ read a4 b4
 mod $a4 $b4
 echo "Enter two numbers"
 read a5 b5
-pow $a5 $b5
+power $a5 $b5
